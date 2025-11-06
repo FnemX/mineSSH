@@ -1,0 +1,18 @@
+name: mineSSH
+version: 1.0.0
+main: com.example.mineSSH.MineSSH
+description: SSH plugin for Minecraft Paper 1.21+
+author: YourName
+website: https://example.com
+api-version: 1.21
+
+commands:
+  minessh:
+    description: Manage SSH server
+    usage: /minessh <start|stop|status>
+    permission: minessh.admin
+
+permissions:
+  minessh.admin:
+    description: Access to mineSSH admin commands
+    default: op

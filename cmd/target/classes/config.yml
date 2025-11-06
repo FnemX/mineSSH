@@ -1,0 +1,32 @@
+# mineSSH 配置文件
+
+# SSH服务器设置
+ssh:
+  # 是否启用SSH服务器
+  enabled: true
+  # SSH服务器端口
+  port: 2222
+  # 认证设置
+  authentication:
+    # 用户名
+    username: "admin"
+    # 密码
+    password: "admin"
+
+# 命令设置
+commands:
+  # 允许执行的命令列表（为空表示允许所有命令）
+  allowed-commands: []
+  # 禁止执行的命令列表
+  denied-commands:
+    - "op"
+    - "deop"
+    - "stop"
+    - "reload"
+
+# 日志设置
+logging:
+  # 是否记录SSH连接日志
+  enable-connection-log: true
+  # 是否记录命令执行日志
+  enable-command-log: true
